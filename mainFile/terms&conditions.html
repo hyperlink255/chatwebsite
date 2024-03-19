@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Chatsens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="header-container">
+    </div>
+    <section class="popup" id="fixed">
+        <div>
+          <div class="popup-form">
+            <div class="item1 modal-background">
+              <div class="popup-closebtn">
+                 <i class="fa fa-remove" id="popup-remove"></i> 
+              </div>
+                    <div class="modal-form">
+                      <p class="popup-text">Talk To Sales</p>
+                      <form id="myForm"> 
+                        <div class="modal-input">
+                        <input type="name" placeholder="Name" id="name">
+                        <span class="error" id="nameError"></span>
+                        </div>
+                        <div class="modal-input">
+                          <input type="number" placeholder="Number" id="number">
+                          <span class="error" id="numberError"></span>
+                          </div>
+                          <div class="modal-input" >
+                            <input type="text" type="Email" placeholder="Email" id="email">
+                            <span class="error" id="emailError"></span>
+                            </div>
+                            <div class="modal-input">
+                              <div class="modal-captcha">
+                              <span  class="Captcha" id="captchaText">pvpm</span>
+                              <i class="fa fa-arrow-rotate-right" id="code"></i>
+                              </div>
+                              </div>
+                              <div class="modal-input">
+                                <input type="text" placeholder="Captcha" id="captcha">
+                                <span class="error" id="captchaError"></span>
+                              </div>
+                              <div class="pricing-button text-align width">
+                                <a href="#"class="pricing-button" id="submitBtn">submit</a>
+                               </div>
+                      </form>
+      
+                    </div>
+            <div class="item2">
+              <div class="image-box">
+                <img src="../imgaes/form_image02.gif">
+              </div>
+          </div>
+      </div>
+      </section>
+      <div class="sales-btn-box">
+      <div id="foatingButtons" class="foatingButtons foatingButtonsDisable">
+        <div id="whatsAppBtnContainer" class="positionval" style="position: relative;">
+          <a class="sales-btn talk-to-sales">
+              <img class="imageTag" src="../imgaes/whatsapp.png" alt="whatsapp">
+            </a>
+            <div id="whatsAppBtnText" class="flotingBtntext">Chat on WhatsApp</div>
+        </div>
+        <div id="talkToSalesBtn"   class="positionval" style="position: relative">
+          <a class="sales-btn talk-to-sales hero-btn1">
+              <img class="imageTag" src="../imgaes/chatFavicon.png" alt="favicon">
+            </a>
+            <div id="talkToSalesBtnText" class="flotingBtntext">Talk to Sales</div>
+        </div>
+      </div>
+      <div id="supportBtn" style="position: relative;">
+      <div class="sales-btn">
+          <img class="imageTag" src="../imgaes/chatIcon.svg" alt="chatIcon">
+      </div>
+      <div id="supportBtnText" class="flotingBtntext">Click to Support Options</div>
+      </div>
+      </div>
+      
+    <main>
+        <!-- Why chatsense section start -->
+        <section>
+            <div class="container">
+                <div class="terms-condition">
+                    <div class=" product-para">
+                        <p class="heading" >Terms &amp; Condition</p>
+                        <p class="product-heading">welcome to chatsense!</p>
+                        <p>These terms &amp; conditions outline the rules and regulations for the use of Chat Sense's
+                            services,
+                            located at ChatSense.in.</p>
+                        <p>
+                            By accessing Chat Sense platform and its services you confirm your consents and accepts the
+                            terms
+                            and conditions. Do not continue to use Chat Sense if you do not agree to take all of the
+                            terms and
+                            conditions stated on this page.
+                        </p>
+                        <p>
+                            The following terminology applies to these terms and conditions, privacy statement and
+                            disclaimer
+                            notice and all agreements: "Client", "You" and "Your" refers to you, the person log on this
+                            website
+                            and agrees to the Company's terms &amp; conditions. "The Company", "Ourselves", "We", "Our" and
+                            "Us",
+                            refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves.
+                            All
+                            terms refer to the offer, acceptance and consideration of payment necessary to undertake the
+                            process
+                            of our assistance to the client in the most appropriate manner for the express purpose of
+                            meeting
+                            the Client's needs in respect of provision of the company's stated services, in accordance
+                            with and
+                            subject to, prevailing law of India. Any use of the above terminology or other words in the
+                            singular, plural, capitalization and/or he/she or they, are taken as interchangeable and
+                            therefore
+                            as referring to same.
+                        </p>
+                        <p class="product-heading">1. Modifications To The Service And Fees</p>
+                        <p>Chat Sense reserve the right to modify, suspend, or discontinue the service at any time for
+                            any
+                            reason
+                            with or without notice.</p>
+                        <p>We reserves the right to change our monthly/annually fees upon 45 days notice. Fee change
+                            will be
+                            notified per email to all our subscribers and will be reflected on the pricing page at
+                            Chat Sense <a href="./pricing.html">pricing</a>.</p>
+                        <p>
+                            Chat Sense reserves the right to update and change the Terms of Service from time to time
+                            without
+                            notice. Any new features that improves or enhance the current Service, including the release
+                            of new
+                            tools and resources, shall be subjected to the terms of services. You may continue to use
+                            the
+                            service after any such enhancement have been made, this shall constitute your agreement to
+                            such
+                            modifications.
+                        </p>
+                        <p class="product-heading">2. License and ownership</p>
+                        <p>
+
+                            Unless otherwise stated, Chat Sense and/or its licensors own the intellectual property
+                            rights for
+                            all
+                            material on Chat Sense. All intellectual property rights are reserved. You may access this
+                            from
+                            Chat Sense for your own personal use subjected to restrictions set in these terms and
+                            conditions.
+
+                        </p>
+                        <p>
+                            Chat Sense reserves all rights, title, and interest in, and client will not acquire any
+                            right, title
+                            or interest in services and content provided by Chat Sense.
+                        </p>
+                        <p>
+                            The license granted under these terms of use is only for the limited use of the services by
+                            the
+                            client for its business operations and shall not include, without limitation, the right to:
+                        </p>
+                        <p class="product-heading">You Must Not :</p>
+                        <ul>
+                            <li>
+                                Republish material from Chat Sense
+                            </li>
+                            <li>Modify, reproduce or make derivative works based on the services or the content</li>
+                            <li>license, sublicense, sell, resell, transfer, assign, distribute or redistribute Chat
+                                Sense
+                                platform or its content and services to any third party</li>
+                            <li>Reproduce, duplicate or copy material from Chat Sense</li>
+                            <li>Redistribute content or services from Chat Sense</li>
+                            <li>
+                                Use the platform for any purpose other than related with the Client`s internal business
+                                operations
+                            </li>
+                            <li>
+                                Reverse engineer or access the services for any reason whatsoever, including without
+                                limitation, to (i) rebuild a competitive product or service, (ii) create a product using
+                                similar ideas functions or content of the Chat Sense or (iii) to copy any ideas,
+                                functions
+                                or content of the services
+                            </li>
+                        </ul>
+                        <p>All right's, title and interest in the Chat Sense property will remain with us. For greater
+                            certainty, the Chat Sense`s property is licensed and not “sold” to Client.
+                        </p>
+                        <p class="product-heading">3. Client data protection and privacy</p>
+                        <ul>
+                            <li> Unless explicitly stated otherwise in these Terms of Use, the client shall be
+                                responsible to ensure that relevant consents under applicable data protection laws have
+                                been
+                                obtained from the users and/individual/data subjects. The client hereby agrees and
+                                acknowledges that the Chat Sense shall have no liability towards any user arising as a
+                                result of
+                                the collection and processing of any personal data by the client.</li>
+                            <li> Client shall be responsible to maintain records of all consents collected as
+                                per the
+                                Applicable Data Protection Laws. The client shall be liable to pay for any damages that
+                                the
+                                company incurs due to inaccurate/insufficient consents received from any users.
+                            </li>
+                            <li>The Company will not use client`s personal data collected on behalf of the
+                                client,
+                                received from the client or its authorized personnel or otherwise processed on behalf of
+                                the
+                                client for any purpose other than as required for the utilization of the services under
+                                the
+                                terms of Use.</li>
+                            <li> The Parties shall agree with the provisions of Applicable Data Privacy Laws
+                                and shall
+                                undertake reasonable security practices as may be prescribed under such Applicable Data
+                                Protection Law.</li>
+                        </ul>
+                        <p class="product-heading">4. Right to Use Client Data</p>
+                        <p>
+                            Client consents and agrees that Chat Sense may use, reproduce, store, modify, and transfer
+                            to
+                            it's
+                            subcontractors, client data, including personal data, solely in connection with delivering
+                            the
+                            services
+                            under this agreement. Client for their acknowledges and agrees that Chat Sense can store,
+                            use,
+                            reproduce,
+                            modify, and transfer data that is not related to an identified or identifiable person,
+                            including
+                            aggregated or de-identified data, without restrictions, for its internal business purposes,
+                            including
+                            but not limited to such purposes as analytics, quality assurance, product and service
+                            enhancement, and
+                            new product and service development. client agrees to cause any administrative user,
+                            client`s client,
+                            and chat participant to agree to the terms.
+                        </p>
+                        <p class="product-heading">5. Client Responsibilities</p>
+                        <p>
+
+                            Clients are responsible for maintaining the privacy and security of their accounts. Chat
+                            Sense
+                            will not
+                            be held liable for any damage or loss that may result from your failure to protect your
+                            login
+                            information, including your password.
+                            client consents and agrees that they are responsible for the activities and communications
+                            of
+                            all
+                            administrative users and chat participants on the Chat Sense platform, and the acceptance by
+                            all
+                            administrative users, client`s clients and chat participants with this agreement, and any
+                            guidelines and
+                            policies published by Chat Sense from time to time.
+
+                        </p>
+                        <p>
+                            The client is fully responsible for all activities that takes place under the account and
+                            any
+                            other
+                            actions taken in connection with the account. They are responsible for all data send and
+                            activity that
+                            undergoes in their account (even when data is sent by others to your account).
+                        </p>
+                        <p>
+                            Chat Sense may, but have no obligation to, remove content and accounts containing content
+                            that
+                            we
+                            determine in our sole interest are unlawful, offensive, threatening, defamatory,
+                            pornographic,
+                            obscene
+                            or otherwise objectionable or violates any party`s intellectual property or these Terms of
+                            Use.
+                        </p>
+                        <p>
+                            Without limiting the generality of any of the prior, client will not, and will not permit
+                            any
+                            other
+                            entity or a person (including any administrative users, client`s clients or chat
+                            participants)
+                            to:-
+                        </p>
+                        <p>
+                            Use the Chat Sense platform to upload, send, collect, store, use, disclose or process,
+                            or
+                            request Chat Sense to obtain from third parties or perform any of the above with respect to,
+                            any
+                            client
+                            data
+                            that contains any computer viruses, worms, malicious code, or any software intended to
+                            damage or
+                            alter a
+                            computer system or data
+                            that client or the applicable administrative user, client`s client or chat participant does
+                            not
+                            have the
+                            lawful right to send, upload, collect, transmit, store, use, disclose, process, copy,
+                            transmit,
+                            distribute and display
+                            that is not true or intentionally misleading ,or impersonates any other person
+                            that is bullying, harassing, abusive, threatening, vulgar, obscene, or offensive, or that
+                            contains
+                            pornography, nudity, or graphic or gratuitous violence, or that promotes violence, racism,
+                            discrimination, bigotry, hatred, or physical harm of any kind against any group or
+                            individual
+                            that is harmful to minors or community in any way or targeted at people under the age of 16
+                            that violates any applicable laws, or infringes, violates or otherwise misappropriates the
+                            intellectual
+                            property or other rights of any third party (including any moral right, privacy right or
+                            right
+                            of
+                            publicity) or that encourages any conduct that may violate, any applicable laws or would
+                            give
+                            rise to
+                            civil or criminal liability
+                            - disable, overly burden, impair, or otherwise interfere with servers or networks connected
+                            to
+                            the
+                            Chat Sense Platform (e.g., a denial of service attack)
+                            attempt to gain unauthorized access to the Chat Sense platform
+                            use any data mining, robots, or similar data gathering or extraction methods, or copy,
+                            Modify,
+                            reverse
+                            engineer, reverse assemble, disassemble, or de-compile the Chat Sense or any part thereof or
+                            otherwise
+                            attempt to discover any source code, except as expressly provided for in this Agreement.
+                        </p>
+                        <p class="product-heading">5.1 WhatsApp &amp; Usage Policy</p>
+                        <p>
+                            The client shall adhere to all the terms &amp; conditions set by WhatsApp at all times. WhatsApp
+                            may update WhatsApp Business policy without notice by continuing to use the WhatsApp
+                            Business
+                            products after such change, client consents to such changes.
+                        </p>
+                        <p>
+                            <a class="dev-links" href="https://www.WhatsApp.com/legal/business-policy/">https://www.WhatsApp.com/legal/business-policy/</a>
+                            The client is not in violation of the WhatsApp Commerce policy, and not in any of the
+                            restricted industries. <a class="dev-links" href="https://www.WhatsApp.com/legal/commerce-policy/">
+                                https://www.WhatsApp.com/legal/commerce-policy/</a>
+
+                        </p>
+                        <p>
+                            WhatsApp may add limits to businesses on the number of messages to send per day. All clients
+                            must adhere to this messaging limit.
+                        </p>
+                        <p>
+                            <a class="dev-links" href="https://developers.facebook.com/docs/WhatsApp/api/rate-limits">https://developers.facebook.com/docs/WhatsApp/api/rate-limits</a>
+                            WhatsApp has the absolute discretion to review, approve or reject any message templates (as
+                            defined in WhatsApp documentations) at any time.
+
+                        </p>
+                        <p>
+                            Client agrees to ensure full compliance with WhatsApp policies regarding sending of
+                            messages.
+                        </p>
+                        <p>
+                            WhatsApp does not offer a way to be notified when a user has blocked your sender, or to
+                            retrieve a list of users who have blocked you.
+                        </p>
+                        <p>
+                            Any violation of these WhatsApp policies may lead to suspension of the number by WhatsApp.
+                            WhatsApp has absolute discretion to limit or remove client`s access to or use of the
+                            WhatsApp
+                            business products if client receives excessive negative feedback, causes harm to WhatsApp or
+                            WhatsApp`s users, or violates or encourages others to violate our terms or policies, as
+                            determined by WhatsApp in our sole discretion. If WhatsApp terminates your account for
+                            violations of relevant WhatsApp Business terms or policies, WhatsApp may prohibit client and
+                            client organization from all future use of WhatsApp products.
+                        </p>
+                        <p>
+                            Chat Sense shall take no responsibility in case of any such violations. Any additional
+                            charges
+                            arising due to this shall be borne by the client.
+                        </p>
+                        <p>
+                            Once registered on ChatSense.in, clients cannot reuse the WhatsApp number on WhatsApp
+                            Business
+                            App or WhatsApp mobile app. The client owns the phone number.
+                        </p>
+                        <p class="product-heading">5.2 WhatsApp Onboarding &amp; Verification Terms</p>
+                        <p>
+                            WhatsApp imposes reviews, such as Facebook business verification <br>
+                            <a class="dev-links" href="https://www.facebook.com/business/help/2058515294227817?id=180505742745347">https://www.facebook.com/business/help/2058515294227817?id=180505742745347</a>
+                            to ensure the
+                            quality of businesses using WhatsApp products. These requirements are prerequisites to use
+                            WhatsApp Business API, and chatSense.in. WhatsApp has absolute discretion to approve
+                            client`s
+                            usage of WhatsApp products. We will assist with the application and submission process By
+                            using Chat Sense, clients agree to the setup for WhatsApp business API, and will providing
+                            all
+                            the
+                            prerequisite documents as required by WhatsApp &amp; facebook.
+                        </p>
+                        <p class="product-heading">5.3 WhatsApp Message Policy</p>
+                        <p>
+                            WhatsApp may change acceptable message types and related policies at their absolute
+                            discretion
+                            at all times.
+                        </p>
+                        <p>
+                            The client may only initiate chats if you are sending a transactional notification, and only
+                            via approved message templates (as defined in WhatsApp documentation), subject to applicable
+                            pricing. Any message templates must comply with WhatsApp`s terms, and only be used for their
+                            designated purpose. WhatsApp has the right to review, approve and reject any message
+                            template at
+                            any time. — client acknowledges that they are responsible for the variable message template
+                            costs, billed by Chat Sense.
+                        </p>
+                        <p>
+                            If a person initiates a chat with client, you may continue that conversation via WhatsApp
+                            for
+                            up to 24 hours after the last message sent to you by that person without charge (“client
+                            Service
+                            Window”). Outside of the client service window, client may only send messages via approved
+                            message templates, for which Chat Sense will bill and charge client the applicable rate.
+                        </p>
+                        <p>
+                            Client may use automation when responding during the client service window, but must also
+                            have
+                            available prompt, clear, and direct escalation paths to human agents
+                        </p>
+                        <p class="product-heading">6. Email and Web Support</p>
+                        <p>
+                            Client will generally have access to Chat Sense`s technical support from 10:00am to 7:00pm
+                            IST
+                            (UTC+5:30) on weekdays (other than holidays observed by Chat Sense) through email support,
+                            or
+                            through the web site using our chat widget, or by mailing us on help@chatsense.in.
+                        </p>
+                        <p class="product-heading">7. Fees and Payment</p>
+                        <p>
+                            <b>Fees. </b> Client will pay to Chat Sense the applicable fees described on theChat Sense
+                            website (the “Fees”) during the term in accordance with the payment terms set out here in.
+                        </p>
+                        <p>
+                            <b> Third Party Messaging Platform Fees.</b> For greater clarity, Chat Sense`s Fees do not
+                            include any charges that may be assessed by third party messaging platforms for access to or
+                            use
+                            of a channel. Such charges shall be the responsibility of client, when they paid directly to
+                            the
+                            third party messaging platforms or when their such access is resold through Chat Sense, in
+                            which
+                            case Chat Sense shall advise client in writing as to the applicable charges and client shall
+                            have
+                            the right to accept such charges or decline them and not use the associated channel. In the
+                            event a third party messaging platforms imposes special requirements on Chat Sense beyond
+                            API
+                            integrations, including but not limited to hosting endpoints unique to that channel, then
+                            Chat Sense shall have the right to charge client for this additional service and client
+                            shall
+                            have the right to accept such charges or decline them and not use the associated channel.
+                        </p>
+                        <p class="product-heading" id="payment">7.1 Payment Terms:</p>
+                        <p>
+                            All Fees shall be in Indian rupees.
+                        </p>
+                        <p>
+                            The subscription start immediately after you make the payment. The on-boarding verification
+                            time is counted towards the subscription.
+                        </p>
+                        <p>
+                            One-time on-boarding fee for WhatsApp Green Tick verification is non-refundable.
+                            WhatsApp
+                            holds absolute discretion whether to grant WhatsApp Green Tick, that they verify client as an
+                            authentic, notable brand that owns the Whatsapp account.
+                        </p>
+                        <p>1. Verify your account in Meta Business Manager.</p>
+                        <p>2. Set up 2-step authentication in the Meta Business Manager.</p>
+                        <p>3. Send more than 1,000 messages a month.</p>
+                        <p>4. Apply for the WhatsApp Green Tick through Chat Sense.</p>
+                        <p>5. Become the owner of a WhatsApp Green Tick.</p>
+                        <p><b>Note:</b></p>
+                        <p>1.Once you get a WhatsApp Green Tick, you won`t be able to change the
+                            display name without having to re-apply. Choose your display name with
+                            care before starting the application process.</p>
+                        <p>2. Restricted Categories:
+                            Drugs,
+                            Tobacco Items,
+                            Gambling Businesses,
+                            Alcohol Brands,
+                            Weapons &amp; Ammunition Businesses,
+                            Live Animals,
+                            Adult Product/Services,
+                            Medical &amp; Healthcare Products,
+                            Dating Services and
+                            Cryptocurrencies <span><a class="dev-links" target="_blank" href="https://www.whatsapp.com/legal/commerce-policy/">know more</a></span>.</p>
+                        <p> <a target="_blank" class="dev-links" href="https://developers.facebook.com/docs/WhatsApp/guides/display-name/">https://developers.facebook.com/docs/WhatsApp/guides/display-name/</a>
+                        </p>
+                        <p>
+                            Chat Sense will charge and invoice the client applicable fees in accordance with our pricing
+                            schedule, in advance, by credit card, on the effective date and on every anniversary
+                            thereafter.
+                            <b> Subscription fees is charged on a pre-pay basis and usage fees is charged on a post-pay
+                                basis at the end of each month</b>, and will cover the use of that variable messages
+                            fees
+                            for the previous month. All monthly &amp; usage payments are non-refundable
+                        </p>
+                        <p>
+                            The clients are here by responsible for all charges incurred (for example international
+                            remittance, bank transfer, and handling fees), and Chat Sense shall receive the total amount
+                            stated in the invoice.
+                        </p>
+                        <p>
+                            Payment obligations hereunder are not subject to any set-off or with holding rights what so
+                            ever,
+                            any and all of which are hereby expressly waived by client.
+                        </p>
+                        <p>
+                            There will be no refunds or credits for partial months of service, upgrade/downgrade
+                            refunds,
+                            for months unused with an open account. In order to treat everyone equally, no
+                            exceptions will be made.
+                        </p>
+                        <p>
+                            <b> Subscription Fee:-</b> The subscription period of the solution shall commence from the
+                            subscription commencement date and shall continue until the subscription end date, unless
+                            agreed
+                            otherwise between the parties. On the subscription commencement date, the client agrees to
+                            providing suitable details for the company to process the payment of a non- refundable fee
+                            for
+                            subscribing the services, at the end of the trial period. The client shall make the payment
+                            of
+                            the amount as indicated by the company for the license of the services (“Subscription
+                            Fees”).
+                        </p>
+                        <p>
+                            <b>Usage Fee:-</b> In addition to the subscription fee as mentioned above, the client shall
+                            also
+                            be liable to pay a monthly usage fee according to the utilization of the services, if such
+                            client exceeds the usage limit offered under the subscription fee structure, in the manner
+                            as
+                            notified to the client by us (“Usage Fees”).
+                        </p>
+                        <p class="product-heading">(The subscription fees and the usage fees shall hereinafter
+                            collectively be referred to as
+                            “Fees”).</p>
+                        <p>
+                            <b>Disputed Invoices or Charges:-</b> If client in good faith disputes any portion of a
+                            Chat Sense invoice or charge, client may providing a dispute notice to Chat Sense with
+                            written
+                            documentation identifying and substantiating the disputed amount within twenty (20) days
+                            from receipt of the applicable invoice or charge, and if applicable, at the time it pays the
+                            undisputed portion of such invoice, withhold payment of such disputed portion. If client
+                            does not report or does not providing such substantiating documentation within that period,
+                            client shall be deemed to have waived its right to dispute any and all portions of that
+                            invoice.
+
+
+                        </p>
+                        <p>
+                            <b>Late Payment:-</b> Except for bona fide disputed amounts, any unsuccessful attempt or
+                            delay to make a payment of any fees or taxes, Chat Sense is entitled to suspend services, in
+                            whole or in part, access to services, until such payment is received. Additionally,
+                            Chat Sense shall assess and client shall pay a charge, compounded monthly, of the lesser of
+                            (a) 1% per month (16% per year) or (b) the highest amount allowed by law on all past due
+                            amounts (except amounts disputed). Further more, upon any such failure all outstanding
+                            amounts shall become due and payable without further delay.
+                        </p>
+                        <p>
+                            Any invoice overdue for more than 25 days will result in account suspension. The Client`s
+                            account will only be activated after all pending invoices are fully settled.
+                        </p>
+                        <p>
+                            Any cancellation of your account will result in the deactivation or deletion of your
+                            account or your access to your account, and the forfeiture and relinquishment of all data in
+                            your account. This information cannot be recovered from Chat Sense once your account is
+                            cancelled.
+                        </p>
+                        <p><b>Taxes:-</b> The fees set out in this agreement do not include applicable taxes, duties,
+                            with holdings, tariffs, levies, customs, capital or income taxes or other governmental
+                            charges or
+                            expenses, including but not limited to value added tax, sales tax, consumption tax and
+                            similar
+                            taxes or duties as well as any current or future municipal, state, federal or provincial
+                            taxes,
+                            and client will pay, indemnify and hold harmless Chat Sense from same, other than taxes
+                            based on
+                            the net income or profits of Chat Sense.</p>
+                        <p class="product-heading">8. Limitation of Liabilities</p>
+                        <p>
+                            The Parties acknowledge that the following provisions have been negotiated by them and
+                            reflect a fair share of risk and form a required basis of the bargain and will survive and
+                            continue in full force and effect regardless of any failure of consideration or of an
+                            exclusive remedy.
+
+
+                        </p>
+                        <p>
+                            In no event will the total aggregate liability of Chat Sense in connection with or
+                            under this agreement exceed the amount of fees paid by client in the prior 12 month period
+                            immediately preceding the event giving rise to the claim or $500usd, whichever is the
+                            lesser. for greater certainty, the existence of one or more claims under this agreement will
+                            not increase this maximum liability amount. In no event will Chat Sense`s third party
+                            suppliers have any liability arising out of or in any way connected to this agreement Type.
+                            To the maximum extent permitted under applicable law, in no event will Chat Sense be
+                            liable to client or any user for any: (i) Special, Exemplary, Punitive, Indirect, Incidental
+                            or
+                            Consequential Damages, (ii) Lost savings, Profit, Data, Use, or Goodwill (iii) Business
+                            interruption (iv) Any costs for the procurement of substitute products or services (v)
+                            Personal injury or death or (vi) Personal or property damage arising out of or in any way
+                            connected to this agreement, regardless of cause of action or the theory of liability, when
+                            their in contract, tort (including negligence, gross negligence, fundamental breach, breach
+                            of a
+                            fundamental term) or otherwise and even if notified in advance of the possibilities of such
+                            damages.
+                        </p>
+                        <p class="product-heading">8.1 Term and Termination</p>
+                        <p>
+                            Chat Sense makes no warranties regarding
+                        </p>
+                        <p>
+                            (i)Your ability to use the Service,(ii) your satisfaction with the Service, (iii) that the
+                            Service will be available at all times, uninterrupted, and error-free (iv), the accuracy of
+                            mathematical calculations performed by the service, and (v) that bugs or errors in the
+                            Service will be corrected. Chat Sense and its affiliates are neither responsible nor
+                            liable
+                            for any direct, indirect, incidental, consequential, special, exemplary, and penitentiary or
+                            other damages arising out of or relating in any way to your use of the Service. Your sole
+                            remedy for dissatisfaction with the service is to stop using the service.
+                        </p>
+                        <p>
+                            <b> Term.</b> This agreement will commence on the effective date and continue to be in
+                            effect until your subscription has been terminated or discontinued in accordance to the
+                            terms client agreed to on the Chat Sense website at time of signup (the “Term”). For more
+                            accuracy, if client has subscribed to an ongoing subscription, then such subscription will
+                            automatically renew at its expiry for the same period of time, at the then-current
+                            subscription rate described on the Chat Sense website
+                        </p>
+                        <p class="product-heading">8.2 Termination For Convenience</p>
+                        <p>
+                            Other party may elect to terminate this agreement and your subscription to Chat Sense
+                            services as of the end of your then current term by providing notice, on or prior to the
+                            date twenty five (25) days preceding the end of such Term. For clarity, unless this
+                            agreement and your subscription is so terminated, your subscription will renew for a Term
+                            equivalent in length to the then expiring Term.
+                        </p>
+                        <p>
+                            Client is responsible for properly cancelling their Account. An email request to cancel your
+                            account shall result in cancellation. Any cancellation of your account will result in the
+                            deactivation or deletion of your account or your access to your Account, and the forfeiture
+                            and relinquishment of all content in your account. This information cannot be recovered from
+                            Chat Sense once your account is cancelled. After terminating a client account, there will be
+                            a 90-day grace period where the client can reactivate the account. After 90 days, the
+                            account deletion process will begin, and the client will have to purchase a new account and
+                            cannot retrieve any of their existing Chat Sense account information. Please be aware of
+                            that. You can cancel at any time, but you will remain liable for all charges accumulated up
+                            to that time, including full monthly charges for the month which you discontinued service.
+                            You will not be charged again
+                        </p>
+                        <p>
+                            Chat Sense will use all reasonable efforts to contact you directly via email to warn you
+                            prior to suspension or termination of your account. Any suspected fraudulent, abusive, or
+                            illegal activity that may be grounds for termination of your use of service, may be referred
+                            to appropriate law enforcement authorities. Chat Sense shall not be liable to you or any
+                            third party for any modification, suspension or discontinuation of the service.
+                        </p>
+                        <p class="product-heading">8.3 Termination For Non-payment</p>
+                        <p>
+                            Chat Sense reserves the right to suspend services if the client fails to timely pay any
+                            undisputed amounts due to Chat Sense under this agreement, but only after Chat Sense
+                            notifies
+                            client of such failure and such failure continues for twenty five (25) calendar days after
+                            such prior notification. Suspension of account shall not release client of its payment
+                            obligations under this Agreement. Client agrees that Chat Sense shall not be liable to
+                            client
+                            or to any third party for any liabilities, claims or expenses arising from or relating to
+                            suspension of the Services resulting from client`s non-payment, unless Chat Sense suspends
+                            the services without giving client 7 calendar-days written notice to rectify its failure to
+                            pay.
+                            Termination will result in the deactivation services or your access to your account, and the
+                            forfeiture and relinquishment of all data in your Account. After 90 days of termination
+                            period your information cannot be recovered from Chat Sense once your account is terminated.
+                            Please be aware of that.
+
+                        </p>
+                        <p>
+                            <b>
+
+                                Refunds and Termination Charges. </b> No refunds or credits for fees will be provided if
+                            you elect to terminate this agreement prior to the end of your term. If you terminate this
+                            agreement prior to the end of your term, or Chat Sense effects such termination, in addition
+                            to other amounts you may owe Chat Sense, you must immediately pay any then unpaid fees
+                            associated with the remainder of your term. This amount will not be payable by you in the
+                            event you terminate as a result of a material breach of this agreement by Chat Sense,
+                            provided that you providing advance notice of such breach to Chat Sense and afford Chat
+                            Sense
+                            not less than thirty (30) days to reasonably cure such breach.
+                        </p>
+                        <p>
+                            <b>
+
+                                Termination for Cause.</b> A party may terminate this Agreement for cause (a) upon
+                            twenty five (25) days` written notice to the other party of a material breach if such breach
+                            remains unresolved at the expiration of such period or if the other Party becomes the
+                            subject of a petition in bankruptcy or any other proceeding relating to insolvency,
+                            receivership, liquidation or assignment for the benefit of creditors. If this agreement is
+                            terminated by you in accordance with this section, Chat Sense will, to the extent permitted
+                            by applicable law, refund you any prepaid fees covering the remainder of the term after the
+                            effective date of termination. If this agreement is terminated by Chat Sense in accordance
+                            with this section, you will pay any unpaid fees covering the remainder of the Term. In no
+                            event will termination relieve you of your obligation to pay any fees payable to Chat Sense
+                            for the period prior to the effective date of termination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+
+<div class="footer-container">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ 
+
+
+AOS.init({
+    offset: 300,
+    duration: 1000,
+    
+});
+</script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script>
+      window.ityped.init(document.querySelector(".type"), {
+        strings: ["Business API", "Marketing"],
+        loop: true,
+      });
+    </script>
+   
+<script src="swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/wp/themes/twenty-eightteen/1.7/assets/js/html5.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="Chat.js"></script>
+</body>
+</html>

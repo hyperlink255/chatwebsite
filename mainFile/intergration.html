@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Chatsens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="header-container">
+    </div>
+    <section class="popup" id="fixed">
+        <div>
+          <div class="popup-form">
+            <div class="item1 modal-background">
+              <div class="popup-closebtn">
+                 <i class="fa fa-remove" id="popup-remove"></i> 
+              </div>
+                    <div class="modal-form">
+                      <p class="popup-text">Talk To Sales</p>
+                      <form method="submit">
+                        <form id="myForm"> 
+                          <div class="modal-input">
+                          <input type="name" placeholder="Name" id="name">
+                          <span class="error" id="nameError"></span>
+                          </div>
+                          <div class="modal-input">
+                            <input type="number" placeholder="Number" id="number">
+                            <span class="error" id="numberError"></span>
+                            </div>
+                            <div class="modal-input" >
+                              <input type="text" type="Email" placeholder="Email" id="email">
+                              <span class="error" id="emailError"></span>
+                              </div>
+                              <div class="modal-input">
+                                <div class="modal-captcha">
+                                <span  class="Captcha" id="captchaText">pvpm</span>
+                                <i class="fa fa-arrow-rotate-right" id="code"></i>
+                                </div>
+                                </div>
+                                <div class="modal-input">
+                                  <input type="text" placeholder="Captcha" id="captcha">
+                                  <span class="error" id="captchaError"></span>
+                                </div>
+                                <div class="pricing-button text-align width">
+                                  <a href="#"class="pricing-button" id="submitBtn">submit</a>
+                                 </div>
+                        </form>
+    
+                      </form>
+                    </div>
+            <div class="item2">
+              <div class="image-box">
+                <img src="../imgaes/form_image02.gif">
+              </div>
+          </div>
+      </div>
+    </section>
+    <div class="sales-btn-box">
+      <div id="foatingButtons" class="foatingButtons foatingButtonsDisable">
+        <div id="whatsAppBtnContainer" class="positionval" style="position: relative;">
+          <a class="sales-btn talk-to-sales">
+              <img class="imageTag" src="../imgaes/whatsapp.png" alt="whatsapp">
+            </a>
+            <div id="whatsAppBtnText" class="flotingBtntext">Chat on WhatsApp</div>
+        </div>
+        <div id="talkToSalesBtn"   class="positionval" style="position: relative">
+          <a class="sales-btn talk-to-sales hero-btn1">
+              <img class="imageTag" src="../imgaes/chatFavicon.png" alt="favicon">
+            </a>
+            <div id="talkToSalesBtnText" class="flotingBtntext">Talk to Sales</div>
+        </div>
+      </div>
+     <div id="supportBtn" style="position: relative;">
+      <div class="sales-btn">
+          <img class="imageTag" src="../imgaes/chatIcon.svg" alt="chatIcon">
+      </div>
+      <div id="supportBtnText" class="flotingBtntext">Click to Support Options</div>
+     </div>
+    </div>
+    <section class="portfolio-area  bg-grey section-padding">
+      <div class="container">
+ <div>
+      <div class="col-md-12">
+        <div class="section-title">
+          <h1></h1>
+         </div>
+      </div>
+              <div class="col-md-12">
+                  <div class="portfolio-list">
+                      <ul style="border: none;" class="nav" id="portfolio-flters">
+                          <li class="filter filter-active" data-filter=".all">all Integration </li>
+                          <li class="filter" data-filter=".branding">CRM</li>
+                          <li class="filter" data-filter=".application">Commerce</li>
+                          <li class="filter" data-filter=".webdesign">Voice</li>
+                          <li class="filter" data-filter=".photography">Payment</li>
+                          <li class="filter" data-filter=".data">Social</li>
+
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="portfolio-container">
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item all branding">
+                      <div class="portfolio-item">
+            <img src="./imgaes/zendesk.png" alt="image">
+                  <div class="portfolio-content-overlay">
+              <p>zendesk</p>
+              <a class="portfolio-link-icon" href="single-portfolio.html">
+                <i class="bi fa fa-arrow-right">
+                </i>
+              </a>
+                  </div>
+                   </div>
+                </div>
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item all branding">
+                      <div class="portfolio-item">
+            <img src="imgaes/salesforce.png" alt="image">
+                          <div class="portfolio-content-overlay">
+              <p>salesforce</p>
+              <a class="portfolio-link-icon" href="single-portfolio.html">
+                <i class="bi fa fa-arrow-right"></i>
+                </a>
+                         </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item all branding">
+                      <div class="portfolio-item">
+            <img src="imgaes/zoho.png" alt="image">
+                          <div class="portfolio-content-overlay">
+              <p>ZOHO</p>
+              <a class="portfolio-link-icon" href="single-portfolio.html">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+                   </div>
+                      </div>
+                  </div>
+          
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item all branding">
+                      <div class="portfolio-item">
+            <img src="./imgaes/bitrix.png" alt="image">
+                          <div class="portfolio-content-overlay">
+              <p>bitrix</p>
+              <a class="portfolio-link-icon" href="single-portfolio.html">
+                <i class="fa fa-arrow-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item all application">
+                      <div class="portfolio-item">
+            <img src="./imgaes/shopify.png" alt="image">
+                          <div class="portfolio-content-overlay">
+              <p>shopify</p>
+              <a class="portfolio-link-icon" href="single-portfolio.html">
+              <i class="fa fa-arrow-right"></i>
+              </a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item all application">
+                      <div class="portfolio-item">
+            <img src="./imgaes/magento.png" alt="image">
+                          <div class="portfolio-content-overlay">
+              <p>Magento</p>
+              <a class="portfolio-link-icon" href="single-portfolio.html">
+                <i class="fa fa-arrow-right"></i>
+                </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-grid-item application all">
+                    <div class="portfolio-item">
+          <img src="./imgaes/woo.png" alt="image">
+                        <div class="portfolio-content-overlay">
+            <p>WOO</p>
+                        <a class="portfolio-link-icon" href="single-portfolio.html">
+                          <i class="fa fa-arrow-right"></i></a>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-grid-item  all webdesign">
+                  <div class="portfolio-item">
+        <img src="./imgaes/favicon.ico" alt="image">
+                      <div class="portfolio-content-overlay">
+          <p>dial Sense</p>
+          <a class="portfolio-link-icon" href="single-portfolio.html">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-grid-item all webdesign">
+                <div class="portfolio-item">
+      <img src="./imgaes/ameyo.png" alt="image">
+                    <div class="portfolio-content-overlay">
+        <p>Ameyo</p>
+          <a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-grid-item all webdesign">
+              <div class="portfolio-item">
+    <img src="./imgaes/genesys.png" alt="image">
+                  <div class="portfolio-content-overlay">
+      <p>Genesys</p>
+      <a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-grid-item all   webdesign">
+            <div class="portfolio-item">
+  <img src="./imgaes/avaya.png" alt="image">
+                <div class="portfolio-content-overlay">
+    <p>Avaya</p>
+    <a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-grid-item  all photography">
+          <div class="portfolio-item">
+<img src="./imgaes/paytm.png" alt="image">
+              <div class="portfolio-content-overlay">
+                <p>paytm</p>
+  <a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-grid-item all photography">
+        <div class="portfolio-item">
+<img src="./imgaes/razorpay.png" alt="image">
+            <div class="portfolio-content-overlay">
+<p>RazorPay</p>
+
+<a class="portfolio-link-icon" href="single-portfolio.html">
+  <i class="fa fa-arrow-right"></i>
+</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 portfolio-grid-item all photography">
+      <div class="portfolio-item">
+<img src="./imgaes/stripe.png" alt="image">
+          <div class="portfolio-content-overlay">
+<p>Stripe</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-6 portfolio-grid-item all  photography">
+    <div class="portfolio-item">
+<img src="./imgaes/payu (1).png" alt="image">
+        <div class="portfolio-content-overlay">
+<p>PayU</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data">
+  <div class="portfolio-item">
+<img src="./imgaes/whatsapp.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>WhatsApp</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data">
+  <div class="portfolio-item">
+<img src="./imgaes/facebook_messenger.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>Facebook Messenger</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data">
+  <div class="portfolio-item">
+<img src="./imgaes/skype.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>Skype</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data">
+  <div class="portfolio-item">
+<img src="./imgaes/viber.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>Viber</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data">
+  <div class="portfolio-item">
+<img src="./imgaes/line.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>line</p>
+
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data" >
+  <div class="portfolio-item">
+<img src="./imgaes/twitter.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>Twitter</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-grid-item all data">
+  <div class="portfolio-item">
+<img src="./imgaes/telegram.png" alt="image">
+      <div class="portfolio-content-overlay">
+<p>Telegram</p>
+<a class="portfolio-link-icon" href="single-portfolio.html"><i class="fa fa-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+
+
+
+
+ 
+   
+
+                
+
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+    
+    <div class="footer-container">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    
+
+     window.addEventListener('load', () => {
+    AOS.init({
+        duration: 500,
+        easing: 'fade-up',
+        once: true,
+        mirror: false
+    })
+});
+    
+
+    </script>
+    <script>
+      $(window).on('load', function () {
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: ".portfolio-grid-item",
+  });
+  $('#portfolio-flters li').on('click', function () {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+    portfolioIsotope.isotope({
+      filter: $(this).data('filter')
+    });
+  });
+});
+
+    </script>
+        <script src="https://unpkg.com/ityped@0.0.10"></script>
+        <script>
+          window.ityped.init(document.querySelector(".type"), {
+            strings: ["Business API", "Marketing"],
+            loop: true,
+          });
+        </script>
+       <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+       <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="istop.js"></script>
+    <script src="jqureymin.js"></script>
+    <script src="https://cdn.jsdelivr.net/wp/themes/twenty-eightteen/1.7/assets/js/html5.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Chat.js"></script>
+    <script>
+      
+    </script>
+</body>
+</html>

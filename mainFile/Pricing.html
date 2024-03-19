@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Chatsens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <div class="header-container">
+    </div>
+    <section class="popup" id="fixed">
+      <div>
+        <div class="popup-form">
+          <div class="item1 modal-background">
+            <div class="popup-closebtn">
+               <i class="fa fa-remove" id="popup-remove"></i> 
+            </div>
+                  <div class="modal-form">
+                    <p class="popup-text">Talk To Sales</p>
+                    <form id="myForm"> 
+                      <div class="modal-input">
+                      <input type="name" placeholder="Name" id="name">
+                      <span class="error" id="nameError"></span>
+                      </div>
+                      <div class="modal-input">
+                        <input type="number" placeholder="Number" id="number">
+                        <span class="error" id="numberError"></span>
+                        </div>
+                        <div class="modal-input" >
+                          <input type="text" type="Email" placeholder="Email" id="email">
+                          <span class="error" id="emailError"></span>
+                          </div>
+                          <div class="modal-input">
+                            <div class="modal-captcha">
+                            <span  class="Captcha" id="captchaText">pvpm</span>
+                            <i class="fa fa-arrow-rotate-right" id="code"></i>
+                            </div>
+                            </div>
+                            <div class="modal-input">
+                              <input type="text" placeholder="Captcha" id="captcha">
+                              <span class="error" id="captchaError"></span>
+                            </div>
+                            <div class="pricing-button text-align width">
+                              <a href="#"class="pricing-button" id="submitBtn">submit</a>
+                             </div>
+                    </form>
+
+                  </div>
+          <div class="item2">
+            <div class="image-box">
+              <img src="../imgaes/form_image02.gif">
+            </div>
+        </div>
+    </div>
+  </section>
+  <div class="sales-btn-box">
+    <div id="foatingButtons" class="foatingButtons foatingButtonsDisable">
+      <div id="whatsAppBtnContainer" class="positionval" style="position: relative;">
+        <a class="sales-btn talk-to-sales">
+            <img class="imageTag" src="../imgaes/whatsapp.png" alt="whatsapp">
+          </a>
+          <div id="whatsAppBtnText" class="flotingBtntext">Chat on WhatsApp</div>
+      </div>
+      <div id="talkToSalesBtn"   class="positionval" style="position: relative">
+        <a class="sales-btn talk-to-sales hero-btn1">
+            <img class="imageTag" src="../imgaes/chatFavicon.png" alt="favicon">
+          </a>
+          <div id="talkToSalesBtnText" class="flotingBtntext">Talk to Sales</div>
+      </div>
+    </div>
+   <div id="supportBtn" style="position: relative;">
+    <div class="sales-btn">
+        <img class="imageTag" src="../imgaes/chatIcon.svg" alt="chatIcon">
+    </div>
+    <div id="supportBtnText" class="flotingBtntext">Click to Support Options</div>
+   </div>
+  </div>
+      <section class="article-container">
+          <div class="article-menu">
+              <p style="font-size:32px;">Simple Pricing , Zero Setup Cost</p>
+              <div class="pricing-plan">
+                <p>Month</p>
+                <div class="toggle">
+                  <label class="switch">
+                    <input type="checkbox" id="input-btn" name="toggleBtn">
+                    <span id="slider" class="slider round"></span>
+                  </label>
+                 </div>
+                <p>Year</p>
+              </div>
+          </div>
+          <div class="pricing-container" id="mainPricingContainer">
+            <div class="pricing-inner">
+              <div class="pricing-menu">
+                <div class="pricing-update pricing-num">
+                  <div class="u-container-layout u-container-layout-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="u-align-center u-container-style">
+                      <div class="u-valign-middle u-container-layout-2" >
+                        <h4 class="u-text u-text-palette-1-base u-text-3">Professional</h4>
+                        <h2 class="u-text-4 u-text-3">₹ 999 /M</h2>
+                        <p style="color:#00556b">999 Charge Monthly</p>
+                      </div>
+                    </div>
+                    <div class="u-text u-text-5">
+                      <p><i class="fa-solid fa-check"></i>1000 UIC Free</p>
+                      <p><i class="fa-solid fa-check"></i>Free WhatsApp API approval</p>
+                      <p><i class="fa-solid fa-check"></i>Upto 10 Members</p>
+                      <p><i class="fa-solid fa-check"></i>Thunderbolt</p>
+                      <p><i class="fa-solid fa-check"></i>Unlimited Template</p>
+                      <p><i class="fa-solid fa-check"></i>Template Broadcasting </p>
+                      <p><i class="fa-solid fa-check"></i>Instant Setup</p>
+                      <p><i class="fa-solid fa-check"></i>Guided Onboarding</p>
+                      <div class="button-2 Justify-content">
+                          <a href="#"class="button-1" style="padding:8px 24px">start to free Trial</a>
+                          </div>
+                         
+                        </div>
+                  </div>
+                  <div class="u-container-layout u-container-layout-1" data-aos="fade-right" data-aos-delay="250">
+                    <div class="u-align-center u-container-style">
+                      <div class=" u-valign-middle u-container-layout-2">
+                        <h4  style="color:#50C4ED;"  class="u-text u-text-palette-1-base u-text-3">Business</h4>
+                        <h2  style="color:#50C4ED;"  class="u-text-4">₹ 199 /M </h2>
+                        <p style="color:#50C4ED">1999 Charge Monthly</p>
+                      </div>
+                    </div>
+                    <div class="u-text u-text-5">
+                      <p><i class="fa-solid fa-check blue"></i>1000 UIC Free</p>
+                      <p><i class="fa-solid fa-check blue "></i>Free WhatsApp API approval</p>
+                      <p><i class="fa-solid fa-check blue"></i>Upto 10 Members</p>
+                      <p><i class="fa-solid fa-check blue"></i>Thunderbolt</p>
+                      <p><i class="fa-solid fa-check blue"></i>Unlimited Template</p>
+                      <p><i class="fa-solid fa-check blue"></i>Template Broadcasting </p>
+                      <p><i class="fa-solid fa-check blue"></i>Instant Setup</p>
+                      <p><i class="fa-solid fa-check blue"></i>Guided Onboarding</p>
+                      <div class="button-2 Justify-content">
+                        <a href="#"class="button-1" style="padding:8px 24px">start to free Trial</a>
+                        </div>
+                 
+                    </div>
+                  </div>
+                  <div class="u-container-layout u-container-layout-1" data-aos="fade-down" data-aos-delay="250">
+                    <div class="u-align-center u-container-style">
+                      <div class=" u-valign-middle u-container-layout-2">
+                        <h4 style="color: #004a86;" class="u-text u-text-palette-1-base u-text-3">Enterprise</h4>
+                        <h2  style="color:#004a86;"  class="u-text-4">₹ 199 /M </h2>
+                        <p style="color:#004a86">1999 Charge Monthly</p>
+                      </div>
+                    </div>
+                    <div class="u-text u-text-5">
+                      <p><i class="fa-solid fa-check"></i>1000 UIC Free</p>
+                      <p><i class="fa-solid fa-check"></i>Free WhatsApp API approval</p>
+                      <p><i class="fa-solid fa-check"></i>Upto 10 Members</p>
+                      <p><i class="fa-solid fa-check"></i>Thunderbolt</p>
+                      <p><i class="fa-solid fa-check"></i>Unlimited Template</p>
+                      <p><i class="fa-solid fa-check"></i>Template Broadcasting </p>
+                      <p><i class="fa-solid fa-check"></i>Instant Setup</p>
+                      <p><i class="fa-solid fa-check"></i>Guided Onboarding</p>
+                      <div class="button-2 Justify-content">
+                        <a href="#"class="button-1" style="padding:8px 24px">start to free Trial</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+     </div>
+     <div class="circle1 navcircle3"></div>
+ </section>
+ <section>
+ </section>
+     <section class="features-planing">
+      <div class="features-bar">
+        <div class="display"></div>
+        <h1>chatsense Plans and Features Compared</h1>
+        <div class="features-menu">
+          <div class="features-inner">
+            <div class="features-name" data-aos="fade-up" data-aos-delay="200">
+              <ul class="plan-scound">
+                <div class="scoll-fix">
+            <h4 class="features-background">Features</h4>
+            <li style="padding-top:50px"><a href="#"></a></li>
+            </div>
+            <li><h2>WhatsApp & chatsense Configuration</h2>
+              <li>Official WhatsApp API</li>
+            <li>WhatsApp Onboarding</li>
+            <li>WhatsApp Green Tick Verification Assistance</li>
+            <li>Website Chat Widget</li>
+            <li>Meta Business Verification Assistance</li>
+            <li>Custom Domain</li>
+            <li><h2>Contact Management </h2></li>
+            <li>Import and Export Contacts</li>
+            <li>Click-to-WhatsApp Ads (CTWA) Analytics</li>
+            <li><h2>Team Inbox</h2></li>
+            <li><a href="#">Shared Inbox</a></li>
+            <li>Assign to Agent </li>
+            <li>Quick Replies</li>
+            <li>Send Template Messages </li>
+            <li>Mobile App Inbox</li>
+            <li>Tag Chats</li>
+            <li>Tag Chats</li>
+            <li>Assign to Team</li>
+            <li>Export Chats</li>
+            <li>Trigger Flow from Chat</li>
+            <li>Filter Chats</li>
+            <li>Automatic chat assignment (Round-Robin)</li>
+            <li><h2>Automations</h2></li>
+            <li>Business Hours </li>
+            <li>Default Actions</li>
+            <li><a href="#">Chatbots</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="features-name" data-aos="fade-up" data-aos-delay="250">
+          <ul class="plan-scound">
+            <div class="scoll-fix">
+            <h4 class="features-background secoud-background">Growth</h4>
+            <div class="button-2 Justify-content">
+              <a href="#"class="button-1">plan</a>
+              </div>
+       
+              </div>
+            <li class>5</li>
+            <li>As per rate card</li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li>Add-on  </li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa fa-remove"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa-solid fa-check"></i></li>
+            <li><i class="fa fa-remove"></i></li>
+            <li>10</li>
+            <li>50</li>
+            <li><i class="fa fa-remove"></i></li>
+            <li><i class="fa fa-remove"></i></li>
+            <li><i class="fa fa-remove"></i></li>
+            <li><i class="fa fa-remove"></i></li>
+          </ul>
+        </div>
+
+      <div class="features-name" data-aos="fade-up" data-aos-delay="300">
+      <ul class="plan-scound">
+        <div class="scoll-fix">
+        <h4 class="features-background  third-background">pro</h4>
+        <div class="button-2 Justify-content">
+          <a href="#"class="button-1">plan</a>
+          </div>
+   
+        </div>
+        <li>5</li>
+        <li>As per  rate card</li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li>Add-on  </li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li>10</li>
+        <li>50</li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+      </ul>
+    </div>
+    <div class="features-name" data-aos="fade-up" data-aos-delay="200">
+      <ul class="plan-scound">
+        <div class="scoll-fix">
+        <h4 class="features-background four-background">business</h4>
+        <div class="button-2 Justify-content">
+          <a href="#"class="button-1">plan</a>
+          </div>
+   
+        </div>
+        <li>5</li>
+        <li>As per  rate card</li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li>Add-on  </li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+       
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa-solid fa-check"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li>10</li>
+        <li>50</li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+        <li><i class="fa fa-remove"></i></li>
+      </ul>
+    </div>
+    </section>
+    <section style="margin-top: 30px;">
+      <div class="pricing-contant home-content hire-section">
+        <p style="font-size: 24px; color:#1877f2" >Lets us understand WhatsApp conversation pricing</p>
+        <p class="para para2">Each conversation is a 24 hour window which allows you to send unlimited messages.</p>
+       <p style="font-size: 24px; color:#1877f2" class="para2">A conversation can be started in two ways</p>
+       <p class="para para2">User-Initiated Conversation</p>
+      <p class="para para2">If a user sends a message and business replies to it, a conversation session is initiated and the session is valid for 24 hours.</p>
+      <p class="para para2">Business-Initiated Conversation</p>
+      <p class="para para2">If a busine0ss sends the first message, a conversation is initiated immediately and the session is valid for 24 hours.</p>
+      <div class="button-2">
+        <div class="pricing-button">
+          <a href="#"class="button-1">start to free Trial</a>
+          </div>
+          <a href="#"class="button-1">demo trial</a>
+         </div>
+    </div>
+      </div>
+      </section>
+  
+    <div class="footer-container">
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 500,
+        easing: 'fade-up',
+        once: true,
+        mirror: false
+    })
+</script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script>
+      window.ityped.init(document.querySelector(".type"), {
+        strings: ["Business API", "Marketing"],
+        loop: true,
+      });
+    </script>
+   
+
+<script src="swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/wp/themes/twenty-eightteen/1.7/assets/js/html5.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="Chat.js"></script>
+</body>
+</html>

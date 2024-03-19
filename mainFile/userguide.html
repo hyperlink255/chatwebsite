@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Chatsens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<div class="header-container">
+</div>
+<section class="popup" id="fixed">
+    <div>
+      <div class="popup-form">
+        <div class="item1 modal-background">
+          <div class="popup-closebtn">
+             <i class="fa fa-remove" id="popup-remove"></i> 
+          </div>
+                <div class="modal-form">
+                  <p class="popup-text">Talk To Sales</p>
+                  <form id="myForm"> 
+                    <div class="modal-input">
+                    <input type="name" placeholder="Name" id="name">
+                    <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="modal-input">
+                      <input type="number" placeholder="Number" id="number">
+                      <span class="error" id="numberError"></span>
+                      </div>
+                      <div class="modal-input" >
+                        <input type="text" type="Email" placeholder="Email" id="email">
+                        <span class="error" id="emailError"></span>
+                        </div>
+                        <div class="modal-input">
+                          <div class="modal-captcha">
+                          <span  class="Captcha" id="captchaText">pvpm</span>
+                          <i class="fa fa-arrow-rotate-right" id="code"></i>
+                          </div>
+                          </div>
+                          <div class="modal-input">
+                            <input type="text" placeholder="Captcha" id="captcha">
+                            <span class="error" id="captchaError"></span>
+                          </div>
+                          <div class="pricing-button text-align width">
+                            <a href="#"class="pricing-button" id="submitBtn">submit</a>
+                           </div>
+                  </form>
+  
+                </div>
+        <div class="item2">
+          <div class="image-box">
+            <img src="../imgaes/form_image02.gif">
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="sales-btn-box">
+  <div id="foatingButtons" class="foatingButtons foatingButtonsDisable">
+    <div id="whatsAppBtnContainer" class="positionval" style="position: relative;">
+      <a class="sales-btn talk-to-sales">
+          <img class="imageTag" src="../imgaes/whatsapp.png" alt="whatsapp">
+        </a>
+        <div id="whatsAppBtnText" class="flotingBtntext">Chat on WhatsApp</div>
+    </div>
+    <div id="talkToSalesBtn"   class="positionval" style="position: relative">
+      <a class="sales-btn talk-to-sales hero-btn1">
+          <img class="imageTag" src="../imgaes/chatFavicon.png" alt="favicon">
+        </a>
+        <div id="talkToSalesBtnText" class="flotingBtntext">Talk to Sales</div>
+    </div>
+  </div>
+  <div id="supportBtn" style="position: relative;">
+  <div class="sales-btn">
+      <img class="imageTag" src="../imgaes/chatIcon.svg" alt="chatIcon">
+  </div>
+  <div id="supportBtnText" class="flotingBtntext">Click to Support Options</div>
+  </div>
+  </div>
+
+
+  <div class="main-wrapper">
+    <!--side bar start-->
+    <aside class="sidebar" id="sidebat-quicklinks"> 
+        <nav class="sidebar-inner">
+            <h1 class="userguide"><a href="./docs_user_guide.html">Chat Sense user guide</a></h1>
+            <div id="sidebarMenu" class="sidebar-body">
+                <ol id="docs-all-menu">
+                  <li>
+      <a class="togglers" onclick="activeParent('01dac757-3517-45a7-bfb6-df085f982732',this)">
+          <i class="fa-solid fa-angle-right"></i>
+           FAQ
+      </a>
+      <ol id="01dac757-3517-45a7-bfb6-df085f982732" class="sub-menu">
+        <li>
+          <a href="#e02f4bf7-a09d-4834-bddf-ddf33ea051ad" onclick="activechild()" class="false">
+        WhatsApp Business Account</a>
+      </li>
+      <li>
+        <a href="#2d88e6f6-1e7e-4f06-a97a-74320bd30ac1" onclick="activechild()" class="false">
+          Unlock Unlimited Messaging</a>
+        </li>
+        <li>
+          <a href="#de8f1a80-6468-4a41-80f0-f54b8d2f17dd" onclick="activechild()" class="false">
+            Working of Pricing
+          </a>
+          </li>
+        </ol>
+  </li>
+</ol>
+  </div>
+        </nav>
+    </aside>
+    <!-- side bar end -->
+
+    <!-- main content start -->
+    <main id="content-faq" class="main-content">
+        <article class="main-content-page">
+            <h1 id="faq-page-title" class="main-content-heading ">FAQ</h1>
+            <div id="faq-content-box" class="faq-box">
+                <div class="faq-text" id="e02f4bf7-a09d-4834-bddf-ddf33ea051ad">
+                    <div class="questions ">
+                       <p class="product-heading faq-heading"> How does your WhatsApp business account work before your Facebook business page is verified?
+
+                       </p>
+                    </div>
+                   <div class="answered">
+                      <p class="product-para answer-para"></p>
+                      <p class="product-para">
+                        After creating a WhatsApp business account,
+                         you`ll need to verify your Facebook business page
+                        . This may require documents such as a certificate of 
+                        incorporation or a business license.</p>
+<p class="product-para">Trial Experience allows you to send free text messages to limited numbers.</p>
+<p class="product-para">Once you've uploaded official documents to verify your business, you'll have access to additional messaging options.</p>
+<p class="product-para">Test Message Types When you send test messages in your unverified WhatsApp business account, you can send the following types of messages</p>
+<p class="product-para">Notifications: One way messages, such as an order alert or a shopping confirmation. These messages will be limited to WhatsApp-defined templates, only during the unverified state to test the experience.</p>
+<p class="product-para">A conversation is a 24-hour messaging window with a given phone number.</p>
+<p class="product-para">Please note that this trial experience expires in 7 days. You are required to complete your business verification before your trial access expires in 7 days.</p>
+<p class="product-para">After your business is verified, you can send more messages.</p><p></p>
+                    </div>  
+                    
+                </div>
+               
+                <div class="faq-text" id="2d88e6f6-1e7e-4f06-a97a-74320bd30ac1">
+                    <div class="questions ">
+                       <p class="product-heading faq-heading"> How can I unlock unlimited messaging?</p>
+                    </div>
+                    
+                   <div class="answered">
+                      <p class="product-para answer-para"></p><p class="product-para">You have to start your Facebook business verification process right away. As soon as your business gets verified, the messaging restrictions will be lifted and you`ll be able to use unlimited access.</p>
+<p class="product-para">You can start your verification process by submitting the required details for Facebook verification.</p>
+<p class="product-para">After submitting all the required details, you will have to wait until your verification is approved, which usually takes 3 to 10 business days from Facebook’s end. You are required to complete your business verification before your trial access expires in 7 days.</p><p></p>
+                    </div>  
+                    
+                </div>
+               
+                <div class="faq-text id="de8f1a80-6468-4a41-80f0-f54b8d2f17dd">
+                    <div class="questions ">
+                       <p class="product-heading faq-heading"> How does pricing work?</p>
+                    </div>
+                    
+                   <div class="answered">
+                      <p class="product-para answer-para"></p><p class="product-para">There are two components to the pricing structure:</p>
+<p class="product-para">1. Subscription charges – Plan that you choose for your business. This is charged by Chat Sense.</p>
+<p class="product-para">2. WhatsApp conversation charges - All conversations between your business and the user.</p>
+<p class="product-para"><strong>Chat Sense total monthly fee = Subscription charges based on your plan + WhatsApp conversation charges</strong></p>
+<p>&nbsp;</p><p></p>
+                    </div>  
+                    
+                </div>
+               </div>
+        </article>
+    </main>
+    <!-- main content end  -->
+    <!--Right side bar start-->
+    <div class="right-side-bar">
+        <aside class="right-sidebar" id="sidebat-quicklinks"> 
+            <nav class="sidebar-inner">
+                <h1 class="other-links userguide">Related links</h1>
+                <div class="right-sidebar-body sidebar-body">
+                    <ol>
+                        <li class="toggle"><a href="">How to use</a></li>
+                        <li class="no-toggle"><a href="">FAQ</a></li>
+                        <li class="toggle"><a href="">Developer</a></li>
+                        <li class="toggle"><a href="">Latest update</a></li>
+                    </ol>
+                </div>
+            </nav>
+        </aside>
+    </div>
+    <!-- side bar end -->
+</div>
+
+<div class="footer-container">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+
+</script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script>
+      window.ityped.init(document.querySelector(".type"), {
+        strings: ["Business API", "Marketing"],
+        loop: true,
+      });
+    </script>
+   
+<script src="swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/wp/themes/twenty-eightteen/1.7/assets/js/html5.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="Chat.js"></script>
+</body>
+</html>

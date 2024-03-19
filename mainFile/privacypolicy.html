@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Chatsens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <div class="header-container">
+    </div>
+    <section class="popup" id="fixed">
+        <div>
+          <div class="popup-form">
+            <div class="item1 modal-background">
+              <div class="popup-closebtn">
+                 <i class="fa fa-remove" id="popup-remove"></i> 
+              </div>
+                    <div class="modal-form">
+                      <p class="popup-text">Talk To Sales</p>
+                      <form id="myForm"> 
+                        <div class="modal-input">
+                        <input type="name" placeholder="Name" id="name">
+                        <span class="error" id="nameError"></span>
+                        </div>
+                        <div class="modal-input">
+                          <input type="number" placeholder="Number" id="number">
+                          <span class="error" id="numberError"></span>
+                          </div>
+                          <div class="modal-input" >
+                            <input type="text" type="Email" placeholder="Email" id="email">
+                            <span class="error" id="emailError"></span>
+                            </div>
+                            <div class="modal-input">
+                              <div class="modal-captcha">
+                              <span  class="Captcha" id="captchaText">pvpm</span>
+                              <i class="fa fa-arrow-rotate-right" id="code"></i>
+                              </div>
+                              </div>
+                              <div class="modal-input">
+                                <input type="text" placeholder="Captcha" id="captcha">
+                                <span class="error" id="captchaError"></span>
+                              </div>
+                              <div class="pricing-button text-align width">
+                                <a href="#"class="pricing-button" id="submitBtn">submit</a>
+                               </div>
+                      </form>
+      
+                    </div>
+            <div class="item2">
+              <div class="image-box">
+                <img src="../imgaes/form_image02.gif">
+              </div>
+          </div>
+      </div>
+      </section>
+      <div class="sales-btn-box">
+      <div id="foatingButtons" class="foatingButtons foatingButtonsDisable">
+        <div id="whatsAppBtnContainer" class="positionval" style="position: relative;">
+          <a class="sales-btn talk-to-sales">
+              <img class="imageTag" src="../imgaes/whatsapp.png" alt="whatsapp">
+            </a>
+            <div id="whatsAppBtnText" class="flotingBtntext">Chat on WhatsApp</div>
+        </div>
+        <div id="talkToSalesBtn"   class="positionval" style="position: relative">
+          <a class="sales-btn talk-to-sales hero-btn1">
+              <img class="imageTag" src="../imgaes/chatFavicon.png" alt="favicon">
+            </a>
+            <div id="talkToSalesBtnText" class="flotingBtntext">Talk to Sales</div>
+        </div>
+      </div>
+      <div id="supportBtn" style="position: relative;">
+      <div class="sales-btn">
+          <img class="imageTag" src="../imgaes/chatIcon.svg" alt="chatIcon">
+      </div>
+      <div id="supportBtnText" class="flotingBtntext">Click to Support Options</div>
+      </div>
+      </div>
+      <main>
+        <!-- Why chatsense section start -->
+        <section>
+            <div class="container">
+                <div class="terms-condition">
+                    <div class=" product-para">
+                        <p class="heading">Privacy Policy</p>
+                        <p class="product-heading">Some key terminologies are explained as follows, and throughout this document:</p>
+                        <p><strong>1.</strong> Brimming Grace Capital Pvt Ltd (“Chat Sense.in”, “Chat Sense”, “Chat Sense”, “we”, “us”, or “our”,
+                            ”Company”) is the company that collects and processes personal data for the purposes described
+                            in this Policy.</p>
+                        <p>
+                            <strong>2.</strong> Personal Data is any information relating to an identified or identifiable natural person
+                            (“Data Subject”).
+                        </p>
+                        <p>
+                            <strong>3.</strong> Client or Clients is a legal business entity with whom Chat Sense has an agreement to providing
+                            the services.
+                        </p>
+                        <p>
+                            This policy (“Privacy Policy”), together with the terms and conditions, and all  their
+                            policies listed as part of the service, underlines the privacy practices of the company
+                            regarding collection, use and safeguard of your information through the services offered
+                            during the contract period. By using, registering or signing up for the service, you accept
+                            the terms of this Privacy Policy. If you do not accept any of these terms, your usage of the
+                            service will be revoked. Your clicking of the “agree” button and submission of personal
+                            information by you (or a representative on behalf of you) to the company will be deemed as
+                            your acceptance of this privacy policy and agree to be contacted by us to inform you about
+                            products and/or services and/or upcoming benefits offered by us or any of our affiliates or
+                            any other sub- domains. This privacy policy is an electronic record in terms of the
+                            information technology Act, 2000 (as amended/re-enacted from time to time) (“IT Act”) and
+                            rules    thereunder, and, amongst others, is published in accordance with the provisions of
+                            rule 3 (1) of the information technology (Intermediaries Guidelines) rules, 2011, which
+                            mandates for publishing of rules and regulations, privacy policy and terms of use for access
+                            or usage of the solution. This privacy policy is an electronic record, generated by a
+                            computer system and does not require any physical or digital signatures. This privacy policy
+                            is meant to help you understand what information we collect, why we collect it and what you
+                            can do to protect your information.
+                        </p>
+                        <p class="product-heading">1. Chat Sense</p>
+                        <p>
+
+                            Chat Sense is a business messaging suite (SAAS) that is powered by the Brimming Grace
+                            Capital
+                            Pvt Ltd. The product providing a platform that allows our clients to store, manipulate,
+                            analysis and transfer messages between their business systems and their clients on a variety
+                            of Chat Sense providing and third party messaging channels.
+                        </p>
+                        <p class="product-heading">2.Collection And Use Of Personal Data</p>
+                        <p>
+                            Chat Sense collects information, including personal data, for the following reasons:
+                        </p>
+                        <ul>
+                            <li>
+                                To understand and enhance our services and website
+                            </li>
+                            <li>Providing and managing the service</li>
+                            <li>Internal business purposes</li>
+                            <li>Communicating with you and marketing team</li>
+                            <li>Recruiting and managing personnel</li>
+                        </ul>
+                        <p>
+                            We seek this personal information either to (a) validate and process your request for the
+                            usage of the service or (b) assist the company and/or any of its affiliates to handle and
+                            meet your requirements and/or transactions, if any, or (c) improve the quality of the
+                            solution or (d) assist you in determining the services best suited for your needs or (e)
+                            facilitate our internal business operations, including the fulfilment of any legal and
+                            regulatory requirements (f) resolve disputes or troubleshooting problems or (g) detect and
+                            protect ourselves against any error, fraud and other criminal activity or (h) enforce our
+                            terms and conditions or (i) as  otherwise described to you at the time of collection.
+                        </p>
+                        <p>
+                            In order to providing our services to our clients we collect the user`s name, email address
+                            and phone number. These details are used only to identify the users and deliver the content
+                            that they need.
+                            In order to providing our service, we may require you to providing us, either directly or
+                            indirectly, with certain personally identifiable information, including but not limited to
+                            user name, and Oath credentials. The information that we request will be retained by us
+                            and used as described in this privacy policy.
+                        </p>
+                        <p>
+                            The web application uses third party services that may collect information used to identify
+                            you. Links to privacy policies of third party service  providers used by Chat Sense:
+                        </p>
+                        <p>
+                            Google Sign-in and Google Drive Services <a href="https://www.google.com/policies/privacy/
+                            " class="dev-links">https://www.google.com/policies/privacy/</a>
+                        </p>
+                        <p>
+                            Facebook Sign-in Service <a href="https://www.facebook.com/policy.php" class="dev-links">https://www.facebook.com/policy.php</a>
+                        </p>
+                        <p>
+                            This Policy is not intended to place any limits on what we do with data that is aggregated
+                            de-identified so it is no longer associated with any individual (Data Subject) or
+                            client of the services
+                        </p>
+                        <p>
+
+                            Chat Sense services are not directed to children under 16. If you learn that a child under
+                            16
+                            has providing us with personal data without consent, please contact us.
+
+                        </p>
+                        <p class="product-heading">2.1 Client information</p>
+                        <p>
+
+                            While you use our services, you`re trusting us with your information. We see it as a
+                            responsibility and will work hard to protect your data and information and put you in
+                            charge.
+                            Chat Sense is committed to the protection of personal data, including data that we use for
+                            our own purposes, and that we maintain on behalf of our clients.
+
+                        </p>
+                        <p class="product-heading">2.2 Message storage</p>
+                        <p>
+                            Chat Sense saves your messages for 15 calendar days for your convenience if you want to
+                            extend the duration for message data you may contact to the customer support for the
+                            following requirement.
+                        </p>
+                        <p class="product-heading"> 3. Providing and managing the Service</p>
+                        <p>
+
+                            In the course of providing the service, Chat Sense may receive, access, analyses, process and
+                            maintain your personal data.
+
+                        </p>
+                        <p>
+                            Our clients determine the types of personal data that will be collected and used within the
+                            service, how it will be used and disclosed, and how long it will be stored. For any
+                            questions related to how your personal data is used by our clients, please contact them
+                            directly.
+                        </p>
+                        <p>
+                            Service data is the information that is processed on behalf of our clients during provision
+                            of the service.
+                        </p>
+                        <p>
+                            This data privacy statement explains how and what personal data we collect from you
+                            through our website. Personal data means all data that can relate to you personally, such as
+                            your name, address,  email account(s), user behaviour.
+                        </p>
+                        <p>
+                            Chat Sense privacy practices related to service data are not covered by this privacy
+                            policy. They are detailed in the Chat Sense service data privacy statement below.
+                        </p>
+                        <p>
+                            Your data is stored in secure cloud servers and we try our best to encrypt all personally
+                            identifiable information.
+                        </p>
+                        <p>
+                            If you require us to delete your account data, you can request so by sending us an email
+                            on help@chatsense.in.
+                        </p>
+                        <p>
+                            Upon termination, all your data (contacts, conversations, etc.) is deleted permanently
+                            from our database after 90 days unless you request  otherwise.
+                        </p>
+                        <p>
+                            <b> Account Information,</b> including contact information, user profile information, and
+                            information about your payment method, is collected from you when you register or
+                            authenticate into our service and is used to manage payment for the service, enable us to
+                            providing support, and facilitate communication.
+                        </p>
+                        <p>
+                            Chat Sense`s privacy practices related to account Information are detailed below and
+                            throughout this privacy policy.
+                        </p>
+                        <p>
+                            Chat Sense`s privacy practices related to service Usage Information are detailed below and
+                            throughout this Privacy Policy.
+                        </p>
+                        <p>
+                            <b> How you use the service.</b> Service usage information is collected, including
+                            information about how you are accessing and using the service. We use this information to
+                            understand and improve our services, and to investigate and prevent security issues, abuse, and
+                            fraud.
+                        </p>
+                        <p>
+                            <b>Storing your IP Addresses.</b> We collect the IP (Internet protocol) addresses of all
+                            visitors to our website and other related information such as page requests, browser type,
+                            operating system and average time spent on our Website. We use this information to help us
+                            understand our website activity, and to monitor and improve our website. In addition to the
+                            information described above, our Website uses Cookies. Please refer to the cookie policy
+                            below for additional details.
+                        </p>
+                        <p class="product-heading">3.1 Internal Business Purposes</p>
+                        <p>
+                            Chat Sense collects the following information from you through our website, social media,
+                            and
+                             their channels for the following purposes:-
+                        </p>
+                        <p class="product-heading">3.2 WhatsApp Message Policy</p>
+                        <p>
+                            WhatsApp may change acceptable message types and related policies at their absolute
+                            discretion
+                            at all times.
+                        </p>
+                        <p>
+                            The client may only initiate chats if you are sending a transactional notification, and only
+                            via approved message templates (as defined in WhatsApp documentation), subject to applicable
+                            pricing. Any message templates must comply with WhatsApp`s terms, and only be used for their
+                            designated purpose. WhatsApp has the right to review, approve and reject any message
+                            template at
+                            any time. — client acknowledges that they are responsible for the variable message template
+                            costs, billed by Chat Sense.
+                        </p>
+                        <p>
+                            If a person initiates a chat with client, you may continue that conversation via WhatsApp
+                            for
+                            up to 24 hours after the last message sent to you by that person without charge (“client
+                            Service
+                            Window”). Outside of the client service window, client may only send messages via approved
+                            message templates, for which Chat Sense will bill and charge client the applicable rate.
+                        </p>
+                        <p>
+                            Client may use automation when responding during the client service window, but must also
+                            have
+                            available prompt, clear, and direct escalation paths to human agents
+                        </p>
+                        <p class="product-heading">4. Communicating with you and marketing practices</p>
+                        <p>
+                            Responding to your request for a product demo:- When you request a free demo, we may
+                            collect your first and last name, job title, WhatsApp number, business email address, and
+                            information about your company. We use this information to contact you and  otherwise
+                            facilitate your free demo.
+                        </p>
+                        <p>
+                            Responding to your inquiries:- When you contact us with a comment, question or complaint,
+                            you may be asked for information that identifies you, such as your name, address and a
+                            telephone number, along with additional information we need to help us promptly answer your
+                            question or respond to your comment. We may retain this information to assist you in the
+                            future and to improve our client service and service offerings (including the Service and
+                            Website).
+                        </p>
+                        <p>
+                            Informing you about products and services:- We may use your contact information for our own
+                            marketing or advertising purposes. We do not sell or rent your personal data to third
+                            parties. You can opt out of these at any time by following the steps outlined below.
+                        </p>
+                        <p>
+                            Opt out of our emailing list.
+                        </p>
+                        <p>
+                            Send us a communication to request deletion of your contact details.
+                        </p>
+                        <p class="product-heading">5. Recruiting and managing personnel</p>
+                        <p>
+                            Processing your job application:- If you apply for a job at Chat Sense, you have to providing
+                            us with certain personal data about yourself, such as information contained in a resume,
+                            cover letter, or similar employment-related materials. We use this information for the
+                            purpose of processing and responding to your application for current and future career
+                            opportunities.
+                        </p>
+                        <p>
+                            Managing employees and contractors:- If you join the Chat Sense team as an employee or
+                            contractor, we will use the information you providing, as well as information we create about
+                            you, for human resources purposes including verifying your eligibility and qualifications,
+                            performance management, to providing compensation and benefits, investigate incidents, and
+                             otherwise facilitate the relationship.
+                        </p>
+                        <p class="product-heading">5.1 Collecting payment for the Service</p>
+                        <p>
+                            For clients that purchase a paid version of our service, we collect and process information
+                            about how you use the service, and your account information (including contact information,
+                            user profile information, and information about your payment method) for the purpose of
+                            billing you.
+                        </p>
+                        <p class="product-heading">5.2 Collecting payment for the Service</p>
+                        <p>
+
+                            As a matter of practice, Chat Sense does not disclose, trade, rent, sell or  otherwise
+                            transfer personal data, except as set out in this policy.
+
+                        </p>
+                        <p>
+                            <b> We may transfer or disclose personal data as follows:</b>
+                        </p>
+                        <p>
+                            Service  provider  arrangements:- We may transfer (or  otherwise make available) personal data
+                            to third parties who process it on our behalf for the purposes noted above. These third
+                            parties may access, process or store personal data in the course of providing these
+                            services, but based on our instructions only.
+                            As of the date hereof, these third party  provider  include technical operations such as
+                            database monitoring, data storage and hosting services and client support software tools.
+
+                        </p>
+                        <p>
+                            Changes to our Business Structure:- Chat Sense may share or disclose data if we engage in a
+                            merger, acquisition, bankruptcy, dissolution, reorganization, sale of some or all of
+                            Chat Sense’s assets, financing, acquisition of all or a portion of our business, a similar
+                            transaction or proceeding, or steps in contemplation of such activities (e.g. due
+                            diligence).
+                        </p>
+                        <p>
+                            Compliance with Laws:- Chat Sense and our partner service  providers of  their countries may
+                            share or disclose personal data to comply with legal or regulatory requirements and to
+                            respond to lawful requests, court orders and legal process.
+                        </p>
+                        <p>
+                            Enforcing Our Rights, Preventing Fraud, and Safety:- Chat Sense may share or disclose data
+                            to protect and defend the rights, property, or safety of us or third parties, including
+                            enforcing contracts or policies, or in connection with investigation and preventing fraud.
+                        </p>
+                        <p class="product-heading">7. Your Rights Access and Correction of Personal Data</p>
+                        <p>
+                            If we receive a request from an individual to access or update personal data we have
+                            collected on behalf of a particular client, we will direct that individual to the relevant
+                            client. We will assist our clients wherever possible in responding to individual access
+                            requests.
+                            If you submit personal data via our website or  otherwise providing us with your personal data,
+                            you may request access, updating or correction of your personal data by submitting a written
+                            request to us. We may request certain personal data for the purposes of verifying your
+                            identity.
+
+                        </p>
+                        <p class="product-heading">8. How We Protect personal data</p>
+                        <p>
+                            Chat Sense takes security of user data seriously. We take various steps to protect
+                            information you providing to us from loss, misuse, and unauthorized access or disclosure.
+                            These steps take into account the sensitivity of the information we collect, process and
+                            store, and the current state of technology.
+                        </p>
+                        <p>
+                            To learn more about current practices and policies regarding security and confidentiality of
+                            personal data and other information, please see our security practices we keep that
+                            document updated as these practices evolve over time.
+                        </p>
+                    <p class="product-heading"> 9. Cookie Policy</p>
+                    <p>
+
+                        Chat Sense uses cookies and similar technologies, to record log data. We use both
+                        session-based and persistent cookies. We place both permanent and temporary cookies in your
+                        device in relation to the services. Some cookies are associated with your account and
+                        personal data in order to remember that you are logged in and which parts of the service or
+                        website you are logged into. Information collected by cookies and other technologies are
+                        treated as non-personal information. However, to the extent that IP addresses or similar
+                        identifiers are considered personal information by local law, we treat any information
+                        linked to such identifiers as personal information. Similarly, to the extent that
+                        non-personal information is combined with personal information, we will treat the combined
+                        information as personal information.
+
+                    </p>
+                    <p>
+                         Their cookies are not tied to your account but are unique and allow us to carry out site
+                        analytics and customization, among other similar things. If you access the services through
+                        your browser, you can manage your cookie settings   there  but if you disable some or all
+                        cookies you may not be able to use the services
+                    </p>
+                    <p>
+                        Chat Sense sets and accesses our own cookies on the domains operated by Chat Sense and its
+                        affiliates. In addition, we use third parties like Google Analytics for website analytics.
+                        You may opt-out of third party cookies from Google Analytics on its website
+                    </p>
+                    <p class="product-heading">10. Updates to this Privacy Policy</p>
+                    <p>
+                        This privacy policy may be updated periodically to reflect changes to our personal data
+                        handling practices. The revised privacy policy will be posted on the website. If you
+                        continue to use the service or the website after the changes are in effect, you agree to the
+                        revised notice.
+                    </p>
+                    </div>
+                </div>
+            </div>
+    </section></main>
+<div class="footer-container">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ 
+
+
+AOS.init({
+    offset: 300,
+    duration: 1000,
+    
+});
+</script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script>
+      window.ityped.init(document.querySelector(".type"), {
+        strings: ["Business API", "Marketing"],
+        loop: true,
+      });
+    </script>
+   
+<script src="swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/wp/themes/twenty-eightteen/1.7/assets/js/html5.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="Chat.js"></script>
+</body>
+</html>
