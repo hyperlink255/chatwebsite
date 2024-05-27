@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -144,6 +144,18 @@
             </div>
             </div>
             </section>
+
+  <section>
+    <div class="toggle-bar">
+      <ul class="navl">
+          <li><a href="#about" class="active"><ion-icon name="home-outline"></ion-icon></a></li>
+          <li><a href="#about2"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+          <li><a href="#product"><ion-icon name="person-outline"></ion-icon></a></li>
+          <li><a href="#Review"><ion-icon name="star-outline"></ion-icon></a></li>
+          <li><a href="#Chat"><ion-icon name="chatbox-ellipses-outline"></ion-icon></a></li>
+           <li><a href="#Business"><ion-icon name="business-outline"></ion-icon></a>
+  </div>
+  </section>
  <section id="modal01" class="video-modal video-fixed">
   <div class="video-icon">
     <i class="fa fa-remove" id="closeBox"></i>
@@ -296,7 +308,7 @@
     </div>
     </div>
 </section>
-<section class="services-section section-padding">
+<section class="services-section section-padding" id="service">
   <div class="our-service"  data-aos="fade-up">
     <h1>our service</h1>
     </div>
@@ -387,7 +399,7 @@
 <div class="telecome-header">
     <h2 style="text-align: center; color:#1877f2; font-size: 40px; padding-top: 20px; padding-bottom: 20px;">Products We Offer</h2>
     </div>
-<section class="data-html about val1" id="about">
+<section class="data-html about val1" id="product">
     <div class="about-img whay-chat-bar">
         <img src="./imgaes/homepage_chat.png" alt="">
     </div>
@@ -671,7 +683,7 @@
 </div>
   </div>
 </section>
-<section class="review pricing-container"  id="review">
+<section class="review pricing-container"  id="Review">
   <h1 style="padding:10px;">customer's review</h1>
   <h4 class="heading">OUR TESTIMONIAL</h4>
   <div class="swiper-container review-slider">
@@ -783,7 +795,7 @@
       </div>
       </div>
 </section>
-<section class="features-plan pricing-container">
+<section class="features-plan pricing-container" >
   <div class="features-menu">
     <h1>Our Features & Services.</h1>
     <div class="row-back about features-inner">
@@ -832,7 +844,7 @@
     </div>
   </div>
 </section>
-  <section>
+  <section id="Chat">
   <div class="whay-chat-sense">
     <h1>Why Chat Sense?</h1>
     <h6>Why Chat Sense? Chat Sense is the most comprehensive communication platform
@@ -982,7 +994,7 @@
       </div>
       </div>
      </section>
-     <section class="pricing-container">
+     <section class="pricing-container" id="Business">
       <h1>Chat Sense For Your Business </h1>
     <div id="mainPricingContainer">
       <div class="pricing-inner">
@@ -1066,6 +1078,8 @@
     </section>
      <div class="footer-container">
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -1105,6 +1119,19 @@
       closeBox.addEventListener('click', () => {
         modal01.classList.remove('closebtn')
       })
+
+      const navl = document.querySelector('.navl')
+      navl.querySelectorAll('a').forEach((item) => {
+        item.addEventListener('click',function (){
+          navl.querySelectorAll('a').forEach((item) => {
+            item.classList.remove('active')
+          })
+          this.classList.add('active')
+   
+        })
+          })
+
+    
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="swiper-bundle.min.js"></script>

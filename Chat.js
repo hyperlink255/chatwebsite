@@ -10,6 +10,9 @@ const code = document.getElementById('code')
 const captchaData = document.getElementById('captchaText')
 const submitBtn = document.getElementById('submitBtn')
 const captchaValue = document.getElementById('captcha')
+
+
+
 function clickBtn(){
 salesbtn.addEventListener('click' , () => {
 const whatsAppBtnContainer = document.querySelectorAll('.positionval')
@@ -78,6 +81,18 @@ fetch("header.html")
      searchval.addEventListener("click", () => {
       position.classList.toggle('active')
       searchval.classList.toggle("fa-remove")
+
+ const header = document.querySelector(".header")
+const arrow = document.querySelector('.arrow')
+arrow.addEventListener('click',(e) => {
+  const nav = header.querySelector('.w-100')
+  nav.classList.toggle('active')
+  const val = e.target
+  val.classList.toggle('active')
+  
+  nav.style.maxHeight = nav.scrollHeight + "px";
+   
+})
      })
      
  })
@@ -182,7 +197,6 @@ formValidation(alphaNums)
       document.getElementById('name').value = ""
       document.getElementById("number").value = ""
       document.getElementById('email').value = ""
-
       captchaData.innerHTML = arr.join("")
       submitBtn.innerHTML = "please wait...."
       var formData = new FormData(form);
@@ -286,11 +300,25 @@ window.addEventListener("scroll", function () {
 });
 
 
-function toggleTheme() {
-const themeToggle = document.querySelector(".theme-toggle")
-console.log('vikram')
+function toggleTheme(){
+const themeTog = document.querySelector(".theme-toggle")
+const nav = themeTog.querySelector("i")
+nav.classList.toggle('fa-moon')
+themeTog.classList.toggle('active')
 document.body.classList.toggle('dark-theme-variables');
-themeToggle.querySelector('i:nth-child(1)').classList.toggle('active')
-themeToggle.querySelector('i:nth-child(2)').classList.toggle('active')
-}
+themeTog.querySelector('i:nth-child(1)').classList.toggle('active')
+themeTog.querySelector('i:nth-child(2)').classList.toggle('active')
 
+}
+toggleTheme()
+
+
+
+
+
+let obj = {
+  a:"one",
+  b:"two",
+  a:"three"
+}
+console.log(obj)
