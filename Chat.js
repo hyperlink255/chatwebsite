@@ -89,7 +89,6 @@ arrow.addEventListener('click',(e) => {
   nav.classList.toggle('active')
   const val = e.target
   val.classList.toggle('active')
-  
   nav.style.maxHeight = nav.scrollHeight + "px";
    
 })
